@@ -11,7 +11,7 @@ headers = {
     'postman-token': "e5f77ec6-3092-b5d1-ff59-5f76931f1cb9"
     }
 
-#using requests 
+# a get request to the api  is fired using requests library 
 response = requests.request("GET", url, headers=headers, params=querystring)
 data = json.loads(response.text)
 print data["gender"]
